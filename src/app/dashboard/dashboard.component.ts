@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-declare var $: any;
+
 
 @Component({
   selector: 'app-dashboard',
@@ -16,20 +16,6 @@ export class DashboardComponent implements OnInit {
     
   }
 
-  onToggleClick(id:any)  {
-    if($('.subm'+id).hasClass('hide')) {
-      $('.subm'+id).addClass('show');
-      $('.subm'+id).removeClass('hide');
-    } else {
-      $('.subm'+id).addClass('hide');
-      $('.subm'+id).removeClass('show');
-    }
-    // if($('.subm'+id).css('display') == 'block'){
-    //   $('.sidebar-submenu'+id).css('display','none');
-    // } else {
-    //   $('.sidebar-submenu'+id).css('display','block');
-    // }
-  }
 
   
 }
